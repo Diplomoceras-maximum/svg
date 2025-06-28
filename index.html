@@ -7,5 +7,76 @@
     <script src="script.js" defer></script>
     <title>SVG</title>
   </head>
-  <body></body>
+  <body>
+    <!-- 
+    ==============================
+    SVGs 
+    ==============================
+
+    1. SVGs are scalable images that retain their scale and file size without ruining the quality
+    2. They can be changed programmatically uusing CSS and JS to alter properties
+
+    SVGs are used for:
+    
+    1. Icons
+    2. Graphs/Charts
+    3. Large, simple images
+    4. Patterned backgrounds
+    5. Applying effects to other elements
+
+    ==============================
+    What are SVGs?
+    ==============================
+
+    1. SVG stands for Scalable Vector Graphic
+    2. Vector images are defined with maths, compared to a traditional grid of pixels
+    3. Unlike raster graphics (grid) vectors are not limited by the size of a pixel grid
+    4. Vectors use formulas for different shapes and lines, they can be scaled at any size and have no effect on the quality or size of the file
+    
+    ==============================
+    XML
+    ==============================
+
+    1. SVGs are defined using XML (Extensible Markup Language), which is used for other things like APIs and word editors
+    2. One benefit of XML is tha tit is human-readable, for example:
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <rect x=0 y=0 width=100 height=50 />
+        <circle class="svg-circle" cx="50" cy="50" r="10"/>
+    </svg>
+
+    3. Another benefit is it can be directly placed within HTML, and as a result are DOM elements and can be manipulated with CSS and JS
+    
+    ==============================
+    Drawbacks
+    ==============================
+
+    1. Not suitable for images with fine details and textures
+    2. Cannot replicate photos or photorealistic images
+
+    ==============================
+    Syntax
+    ==============================
+
+    1. Typically SVGs are not coded from scratch but copied from websites or image editors such as Adobe Illustrator or Figma
+    2. Important to know syntax to make tweaks to copied images, some examples:
+
+    xmlns - stands for “XML NameSpace”. Used to specify the XML being used and is important in telling the browser to render it correctly
+    viewBox - defines the bounds of the SVG. Useful when defining positions of different elements and the aspect ratio
+    class, id - same function in HTML
+    circle, rect, path, text - define basic building blocks of making images
+
+    ==============================
+    Embedding SVGs
+    ==============================
+
+    There are two approaches to place an SVG: linked and inline
+    
+    1. Linking SVGs works the same way as linking other images. You use the <img> tag and link it using background-image property, however the contents of the SVG will not be accessible from the webpage
+    2. Alternatively you can use inline by pasting the content directly into the webpages code, this way you can see the SVGs properties allowing you to alter the image dynamically with CSS and Js
+    3. Inline SVGs make code harder to read, makes pages less cacheable, and may delay HTML from loading in places
+    4. Unless SVGs need to be tweaked, linking is more appropriate
+
+    -->
+  </body>
 </html>
